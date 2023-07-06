@@ -30,7 +30,7 @@ const User = async ({ params: { userId } }: { params: { userId: number } }) => {
     <div>
       <Head>
         <title>Crawling and Indexing</title>
-        {/* instead of example.com use the domain you want to consider for ranking */}
+        {/* instead of example.com use the domain we want to consider for ranking */}
         <link
           rel="canonical"
           href="https://example.com/users"
