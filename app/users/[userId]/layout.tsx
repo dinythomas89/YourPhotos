@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Dynamic User Profile - YourPhotos",
+  title: "User Profile - YourPhotos",
 };
 
 export default function UserLayout({
