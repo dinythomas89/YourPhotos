@@ -10,6 +10,7 @@ async function getUser(userId: number) {
     `https://jsonplaceholder.typicode.com/users/${userId}`,
     { cache: "no-store" }
   );
+  if (!res.ok) throw new Error("Failed to fetch Data");
   return res.json();
 }
 
@@ -18,6 +19,7 @@ async function getUserPhotos(userId: number) {
     `https://jsonplaceholder.typicode.com/albums/${userId}/photos`,
     { cache: "no-store" }
   );
+  if (!res.ok) throw new Error("Failed to fetch Data");
   return res.json();
 }
 
